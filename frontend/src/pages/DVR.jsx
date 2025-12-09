@@ -1426,7 +1426,7 @@ const DVRPage = () => {
     }
     fetchRecordings();
     fetchRecurringRules();
-  }, [channels, fetchChannels, fetchRecordings, fetchRecurringRules]);
+  }, []);
 
   // Re-render every second so time-based bucketing updates without a refresh
   const [now, setNow] = useState(userNow());
